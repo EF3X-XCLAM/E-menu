@@ -32,10 +32,12 @@
         <p class="h3 text-center td-txt">Today's Deals</p>
         <div class="row td d-flex justify-content-center">
             <div class="col td-container">
-                <img th:src="@{/img/tm1.jpeg}" alt="..." class="td-item">
+<!--                <img th:src="@{/img/tm1.jpeg}" alt="..." class="td-item">-->
+                <img src="../../img/tm1.jpeg" th:attr="src=@{/img/tm1.jpeg},title=#{bs},alt=#{bs}" class="td-item"/>
             </div>
             <div class="col">
-                <img th:src="@{/img/tm2.jpeg}" alt="..." class="td-item">
+<!--                <img th:src="@{/img/tm2.jpeg}" alt="..." class="td-item">-->
+                <img src="../../img/tm2.jpeg" th:attr="src=@{/img/tm2.jpeg},title=#{bs},alt=#{bs}" class="td-item"/>
             </div>
         </div>
     </section>
