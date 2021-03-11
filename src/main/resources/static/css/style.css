@@ -38,7 +38,7 @@ html,body
 }
 
 .navbar{
-	background-image: url("titlebg.jpeg");
+	background-image: url("/img/titlebg.jpeg");
 	height: 100px;
 	background-position: center;
 	background-size: cover;	
