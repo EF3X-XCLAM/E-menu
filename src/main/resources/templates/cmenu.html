@@ -76,15 +76,28 @@
 
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <div class="row " style="color: #0d5d38 !important;">
-                                <div class="col">
-                                    One of three columns
+                                <div class="col item_img">
+                                    <img src="https://burgerking.lt/images/optimized/products/whopper-desktop-94537c472ebdcbf7bf6ff3a6259a496a.png" alt="..." class="rounded-circle cat_item_img">
                                 </div>
-                                <div class="col">
-                                    One of three columns
+                                <div class="col-6 item_text_container">
+                                    Burger
+                                    <p class="item_text">A hamburger is a sandwich consisting of one or more cooked patties of ground meat, usually beef, placed inside a sliced bread roll or bun.</p>
                                 </div>
                                 <div class="col item-price">
                                     <ul class="list-group">
-                                        <li class="list-group-item item_counter"><span class="badge badge-primary badge-pill" style="color: #0d5d38 !important;">14</span></li>
+                                        <li class="list-group-item item_counter">
+								 <span class="input-group-prepend">
+										<button type="button" class="btn btn-outline-secondary btn-number plus-minus-btn" disabled="disabled" data-type="minus" data-field="quant[1]">
+											<span class="fa fa-minus"></span>
+										</button>
+									</span>
+                                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                            <span class="input-group-append">
+										<button type="button" class="btn btn-outline-secondary btn-number plus-minus-btn" data-type="plus" data-field="quant[1]">
+											<span class="fa fa-plus"></span>
+										</button>
+									</span>
+                                        </li>
                                         <li class="list-group-item price">Eur 3.00</li>
                                     </ul>
                                 </div>
