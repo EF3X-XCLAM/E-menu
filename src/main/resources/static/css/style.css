@@ -125,6 +125,8 @@ html,body
 }
 .price{
 	padding: .5rem 0.5rem !important;
+	font-weight: 500;
+	margin-top: 30px;
 }
 .item_img{
 	padding:2px !important;
@@ -134,13 +136,25 @@ html,body
 	padding-left:8px !important;
 }
 .item_text{
-	font-size:0.7rem !important;
-	text-align: justify;
-  text-justify: inter-word;
+	font-size: 0.7rem !important;
+    text-align: justify;
+    word-spacing: 0px;
+    letter-spacing: -1px;
+    margin: 0;
 }
-.form-control{
-	width:50% !important;
-	margin:0 !important;
+.plus-minus-btn{
+	padding: 0px 4px !important;
+    font-size: 15px !important;
+	font-weight: 900 !important;
+	border-width:2px !important;
+}
+.item_quan{
+	background-color: #f6f6f6 !important;
+    border: none !important;
+    padding: 1px 3px !important;
+    width: 20px !important;
+    margin: 0px 3px !important;
+	font-weight:900 !important;
 }
 
 
