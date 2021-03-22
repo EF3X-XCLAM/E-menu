@@ -1,0 +1,93 @@
+body {
+    margin:0;
+    padding: 0;
+    background: url(backemen.jpeg);
+    background-size: cover;
+    background-position: initial;
+
+}
+
+.loginbox{
+    width: 420px;
+    height: 490px;
+    background: white;
+    color: #D4A017;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius:5%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 80px 30px;
+
+}
+.logo{
+    width: 130px;
+    height: 130px;
+
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 80px;
+    text-align: center;
+    font-size: 33px ;
+}
+.header_bs{
+    font-family: 'Stick', sans-serif;
+    color:white !important;
+
+    text-shadow: 6px 4px 0px rgb(0 0 0);
+
+    color: peru;
+    padding: 0 80px ;
+    text-align: center;
+    font-size: 90px ;
+
+
+
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    border: black;
+}
+
+.loginbox input{
+    width: 348px;
+    margin-bottom: 20px;
+    border: black;
+
+}
+
+.loginbox input[type= "text"], input[type ="password"]
+{
+
+    border-bottom: 1px solid brown;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px ;
+}
+
+.loginbox input[type = "submit"]
+{
+    border : black;
+    outline: none;
+    height: 40px;
+    background: chocolate;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px ;
+
+}
+
+
+
+
