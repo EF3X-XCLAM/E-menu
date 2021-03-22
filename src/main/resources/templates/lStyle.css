@@ -1,11 +1,14 @@
 body {
     margin:0;
     padding: 0;
-    background: url(backemen.jpeg);
+    background: url(backemen.jpg);
     background-size: cover;
     background-position: initial;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
 
 }
+
 
 .loginbox{
     width: 420px;
@@ -20,6 +23,7 @@ body {
     box-sizing: border-box;
     padding: 80px 30px;
 
+
 }
 .logo{
     width: 130px;
@@ -31,10 +35,12 @@ body {
 }
 
 h1{
+    font-family: "Ubuntu";
+    color: #975737;
     margin: 0;
     padding: 0 0 80px;
     text-align: center;
-    font-size: 33px ;
+    font-size: 40px ;
 }
 .header_bs{
     font-family: 'Stick', sans-serif;
@@ -55,7 +61,7 @@ h1{
     margin: 0;
     padding: 0;
     font-weight: bold;
-    border: black;
+
 }
 
 .loginbox input{
@@ -68,20 +74,21 @@ h1{
 .loginbox input[type= "text"], input[type ="password"]
 {
 
-    border-bottom: 1px solid brown;
-    background: transparent;
+    border-bottom: 3px solid #975737;
+
     outline: none;
     height: 40px;
-    color: black;
+    color: #501d03;
     font-size: 16px ;
 }
 
 .loginbox input[type = "submit"]
 {
     border : black;
-    outline: none;
+    position: center;
+    outline: black;
     height: 40px;
-    background: chocolate;
+    background: #975737;
     color: white;
     font-size: 18px;
     border-radius: 10px ;
