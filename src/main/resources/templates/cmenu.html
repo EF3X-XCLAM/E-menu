@@ -87,17 +87,13 @@
                                 <div class="col-3 item-price">
                                     <ul class="list-group">
                                         <li class="list-group-item item_counter">
-								 <span class="input-group-prepend">
-										<button type="button" class="btn btn-outline-danger rounded-circle btn-number plus-minus-btn" disabled="disabled" data-type="minus" data-field="quant[1]">
-											−
-										</button>
-									</span>
-                                            <input type="text" name="quant[1]" class="form-control input-number item_quan" value="1" min="1" max="10">
-                                            <span class="input-group-append">
-										<button type="button" class="btn btn-outline-success rounded-circle btn-number plus-minus-btn" data-type="plus" data-field="quant[1]">
-											+
-										</button>
-									</span>
+                                            <button type="button" class="btn btn-outline-danger rounded-circle plus-minus-btn dec">
+                                                −
+                                            </button>
+                                            <input type="number" class="form-control item_quan" value="0" min="1" max="10" name="qty" id="1">
+                                            <button type="button" class="btn btn-outline-success rounded-circle plus-minus-btn inc">
+                                                +
+                                            </button>
                                         </li>
                                         <li class="list-group-item price text-center">€ 3.00</li>
                                     </ul>
@@ -119,17 +115,13 @@
                                 <div class="col-3 item-price">
                                     <ul class="list-group">
                                         <li class="list-group-item item_counter">
-								 <span class="input-group-prepend">
-										<button type="button" class="btn btn-outline-danger rounded-circle btn-number plus-minus-btn" disabled="disabled" data-type="minus" data-field="quant[1]">
-											−
-										</button>
-									</span>
-                                            <input type="text" name="quant[1]" class="form-control input-number item_quan" value="1" min="1" max="10">
-                                            <span class="input-group-append">
-										<button type="button" class="btn btn-outline-success rounded-circle btn-number plus-minus-btn" data-type="plus" data-field="quant[1]">
-											+
-										</button>
-									</span>
+                                            <button type="button" class="btn btn-outline-danger rounded-circle plus-minus-btn dec">
+                                                −
+                                            </button>
+                                            <input type="number" class="form-control item_quan" value="0" min="1" max="10" name="qty" id="2">
+                                            <button type="button" class="btn btn-outline-success rounded-circle plus-minus-btn inc">
+                                                +
+                                            </button>
                                         </li>
                                         <li class="list-group-item price text-center">€ 3.00</li>
                                     </ul>
@@ -152,17 +144,13 @@
                                 <div class="col-3 item-price">
                                     <ul class="list-group">
                                         <li class="list-group-item item_counter">
-								 <span class="input-group-prepend">
-										<button type="button" class="btn btn-outline-danger rounded-circle btn-number plus-minus-btn" disabled="disabled" data-type="minus" data-field="quant[1]">
-											−
-										</button>
-									</span>
-                                            <input type="text" name="quant[1]" class="form-control input-number item_quan" value="1" min="1" max="10">
-                                            <span class="input-group-append">
-										<button type="button" class="btn btn-outline-success rounded-circle btn-number plus-minus-btn" data-type="plus" data-field="quant[1]">
-											+
-										</button>
-									</span>
+                                            <button type="button" class="btn btn-outline-danger rounded-circle plus-minus-btn dec">
+                                                −
+                                            </button>
+                                            <input type="number" class="form-control item_quan" value="0" min="1" max="10" name="qty" id="3">
+                                            <button type="button" class="btn btn-outline-success rounded-circle plus-minus-btn inc">
+                                                +
+                                            </button>
                                         </li>
                                         <li class="list-group-item price text-center">€ 3.00</li>
                                     </ul>
@@ -294,18 +282,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script th:src="@{/js/cmenu.js}"></script>
 
 <!-- Optional JavaScript; choose one of the two! -->
