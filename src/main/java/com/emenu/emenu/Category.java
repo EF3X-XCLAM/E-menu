@@ -1,11 +1,9 @@
 package com.emenu.emenu;
-
-
 import javax.persistence.*;
-
+import java.util.List;
 
 @Entity(name = "Category")
-@Table(name = "category")
+@Table(name = "categories")
 public class Category {
 
     @Id
@@ -20,6 +18,10 @@ public class Category {
             unique = true
     )
     private String ct_name;
+
+
+    @OneToMany(mappedBy = "category")
+    private List<Item> item;
 
     public Category(Long ctID, String ct_name) {
         this.ctID = ctID;
