@@ -9,7 +9,7 @@ public class Item {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     @Column(name="itID")
-    private Long itID;
+    private Integer itID;
 
     @Column(
             name="it_name",
@@ -48,7 +48,7 @@ public class Item {
     @JoinColumn(name = "ct_id", referencedColumnName = "ctID")
     private Category category;
 
-    public Item(Long itID, String it_name, String description, Integer quanity, float price, byte[] image,
+    public Item(Integer itID, String it_name, String description, Integer quanity, float price, byte[] image,
                 Category category) {
         this.itID = itID;
         this.it_name = it_name;
@@ -59,11 +59,11 @@ public class Item {
         this.category = category;
     }
 
-    public Long getItID() {
+    public Integer getItID() {
         return itID;
     }
 
-    public void setItID(Long itID) {
+    public void setItID(Integer itID) {
         this.itID = itID;
     }
 

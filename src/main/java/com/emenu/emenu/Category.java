@@ -9,7 +9,7 @@ public class Category {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     @Column(name="ctID")
-    private Long ctID;
+    private Integer ctID;
 
     @Column(
             name="ct_name",
@@ -23,16 +23,19 @@ public class Category {
     @OneToMany(mappedBy = "category")
     private List<Item> item;
 
-    public Category(Long ctID, String ct_name) {
+    public Category(Integer ctID, String ct_name) {
         this.ctID = ctID;
         this.ct_name = ct_name;
     }
 
-    public Long getCtID() {
+    public Category() {
+    }
+
+    public Integer getCtID() {
         return ctID;
     }
 
-    public void setCtID(Long ctID) {
+    public void setCtID(Integer ctID) {
         this.ctID = ctID;
     }
 
