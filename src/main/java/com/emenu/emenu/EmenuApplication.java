@@ -15,7 +15,7 @@ public class EmenuApplication {
 	@Bean
 	CommandLineRunner commandLineRunner(CategoryRepository categoryRepository){
 		return args -> {
-			categoryRepository.findAll();
+			System.out.println(categoryRepository.findAll());
 		};
 
 	};
