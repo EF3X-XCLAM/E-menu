@@ -38,30 +38,30 @@ html,body
 }
 
 .navbar{
-	background-image: url("/img/titlebg.jpeg");
+	background-image: url("titlebg.jpeg");
 	height: 100px;
 	background-position: center;
-	background-size: cover;
+	background-size: cover;	
 }
 .nav_c{
 	background-color:#F6F6F6;
-	border-bottom-right-radius:1.25rem !important;
-	border-bottom-left-radius:1.25rem !important;
+	border-bottom-right-radius:1.25rem !important; 
+	border-bottom-left-radius:1.25rem !important;	 
 }
 
 .todayM{
 	box-shadow: -1px 1px 3px 0px #888888;
 	background-color:#F6F6F6;
 	margin-bottom:15px;
-	border-bottom-right-radius:1.25rem !important;
-	border-bottom-left-radius:1.25rem !important;
+	border-bottom-right-radius:1.25rem !important; 
+	border-bottom-left-radius:1.25rem !important; 
 	padding:7px 0;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight:900;
 	color:#383838;
 }
 .td-txt{
-	margin-bottom:0 !important;
+	margin-bottom:0 !important; 
 }
 .td{
 	padding:10px;
@@ -83,10 +83,10 @@ html,body
 
 .category_container{
 	margin-bottom:100px;
-
+	
 }
 .categories{
-	border-radius:1.25rem !important;
+	border-radius:1.25rem !important; 
 	background-color:#F6F6F6;
 	margin: 10px 5px;
 	box-shadow: 0px 2px 3px 0px #888888;
@@ -123,11 +123,15 @@ html,body
 	padding:2px !important;
 	display: inline-flex !important;
 }
+
+
 .price{
 	padding: .5rem 0.5rem !important;
 	font-weight: 500;
 	margin-top: 30px;
 }
+
+
 .item_img{
 	padding:2px !important;
 }
@@ -135,6 +139,8 @@ html,body
 	padding:5px !important;
 	padding-left:8px !important;
 }
+
+
 .item_text{
 	font-size: 0.7rem !important;
     text-align: justify;
@@ -143,7 +149,7 @@ html,body
     margin: 0;
 }
 .plus-minus-btn{
-	padding: 0px 4px !important;
+	padding: 0px 4px !important; 
     font-size: 15px !important;
 	font-weight: 900 !important;
 	border-width:2px !important;
@@ -151,12 +157,11 @@ html,body
 .item_quan{
 	background-color: #f6f6f6 !important;
     border: none !important;
-    padding: 1px 4px !important;
-    width: 30px !important;
+    padding: 1px 4px !important; /* change*/
+    width: 30px !important; /* change*/
     margin: 0px 3px !important;
 	font-weight:900 !important;
 }
-
 
 /*
 .total-ft{
