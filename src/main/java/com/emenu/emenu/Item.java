@@ -43,6 +43,8 @@ public class Item {
     )
     private byte[] image;
 
+    public Item() {
+    }
 
     @ManyToOne
     @JoinColumn(name = "ct_id", referencedColumnName = "ctID")
@@ -56,6 +58,14 @@ public class Item {
         this.quanity = quanity;
         this.price = price;
         this.image = image;
+        this.category = category;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
         this.category = category;
     }
 

@@ -12,12 +12,12 @@ public class EmenuApplication {
 		SpringApplication.run(EmenuApplication.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	CommandLineRunner commandLineRunner(CategoryRepository categoryRepository){
 		return args -> {
 			System.out.println(categoryRepository.findAll());
 		};
 
-	};
+	};*/
 
 }
