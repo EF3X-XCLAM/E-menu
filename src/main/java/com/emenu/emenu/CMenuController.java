@@ -2,6 +2,7 @@ package com.emenu.emenu;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
@@ -13,9 +14,12 @@ public class CMenuController {
     private ItemService itemService;
 
     @GetMapping("/")
-    public String emenu()
+    public String emenu(Model model)
     {
-        itemService.menu();
+
+        model.addAttribute("categories", itemService.menu());
+        model.addAttribute("items",itemService.findAll());
+        //itemService.menu();
         //System.out.println(categoryService.findAll());
         return "cmenu";
     }

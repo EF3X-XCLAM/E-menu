@@ -18,7 +18,6 @@ public class CategoryService implements CategorySerInter{
 
     @Override
     public Optional<Category> findById(Integer id) {
-
         return categoryRepository.findById(id);
     }
 
