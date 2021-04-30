@@ -20,7 +20,8 @@ public class CMenuController {
         model.addAttribute("categories", itemService.menu());
         model.addAttribute("items",itemService.findAll());
         //itemService.menu();
-        //System.out.println(categoryService.findAll());
+        System.out.println(itemService.menu());
+       // System.out.println(itemService.findAll());
         return "cmenu";
     }
 }

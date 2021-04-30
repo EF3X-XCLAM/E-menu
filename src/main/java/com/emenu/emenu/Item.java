@@ -37,6 +37,7 @@ public class Item {
     )
     private float price;
 
+    @Lob
     @Column(
             name="image",
             nullable = false

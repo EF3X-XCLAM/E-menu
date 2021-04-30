@@ -17,7 +17,7 @@ public class ItemService implements ItemSerInter{
         return itemRepository.findAll();
     }
 
-    public List<Category> menu(){
+    public Iterable<Category> menu(){
 
         List<Item> newlist = (List<Item>) itemRepository.findAll();
        // List<Optional<Category>> cat = new ArrayList<Optional<Category>>();
