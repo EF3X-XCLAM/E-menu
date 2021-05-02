@@ -56,14 +56,10 @@
 
                     <p class="h6 text-center">[[${cat.ct_name}]]</p>
                     <div class="row tm">
-                        <div class="col">
-                            <img src="https://burgerking.lt/images/optimized/products/bacon-king-desktop-c675c75f01a1b2f4a89b17a23456e109.png" alt="..." class="rounded-circle cat_item_img">
-                        </div>
-                        <div class="col">
-                            <img src="https://burgerking.lt/images/optimized/products/whopper-desktop-94537c472ebdcbf7bf6ff3a6259a496a.png" alt="..." class="rounded-circle cat_item_img">
-                        </div>
-                        <div class="col">
-                            <img src="https://burgerking.lt/images/optimized/products/chicken-tendercrisp-cheese-desktop-186d30751b3a595c45eefaee659853e6.png" alt="..." class="rounded-circle cat_item_img">
+                        <div class="col"
+                             th:each="item, it: ${items}"
+                             th:if="${cat.ctID == item.category.ctID and it.count &lt; 4}">
+                            <img th:src="'data:image/jpeg;base64,' + ${itemImage.getImgData(item.image)}" alt="..." class="cat_item_img rounded-circle"/>
                         </div>
                     </div>
                 </div>
@@ -77,8 +73,8 @@
                             th:each="item, it: ${items}"
                             th:if="${cat.ctID == item.category.ctID}">
                             <div class="row " style="color: #0d5d38 !important;">
-                                <div class="col-4 item_img rounded-circle ">
-                                    <img src="https://burgerking.lt/images/optimized/products/bacon-king-desktop-c675c75f01a1b2f4a89b17a23456e109.png" alt="..." class="cat_item_img">
+                                <div class="col-4 item_img">
+                                    <img th:src="'data:image/jpeg;base64,' + ${itemImage.getImgData(item.image)}" alt="..." class="cat_item_img rounded-circle"/>
                                 </div>
                                 <div class="col-5 item_text_container">
                                     [[${item.it_name}]]
@@ -90,7 +86,7 @@
                                             <button type="button" class="btn btn-outline-danger rounded-circle plus-minus-btn dec">
                                                 −
                                             </button>
-                                            <input th:type="number" class="form-control item_quan" th:value="0" th:min="1"  th:max="10" th:name="qty" th:id="${it.count}">
+                                            <input th:type="number" class="form-control item_quan" th:value="0" th:min="1"  th:max="${item.quanity != null} ? ${item.quanity} : 10" th:name="qty" th:id="${it.count}">
                                             <button type="button" class="btn btn-outline-success rounded-circle plus-minus-btn inc">
                                                 +
                                             </button>

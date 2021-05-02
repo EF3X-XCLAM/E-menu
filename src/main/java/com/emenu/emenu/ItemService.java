@@ -17,6 +17,10 @@ public class ItemService implements ItemSerInter{
         return itemRepository.findAll();
     }
 
+    public String getImgData(byte[] byteData) {
+        return Base64.getMimeEncoder().encodeToString(byteData);
+    }
+
     public Iterable<Category> menu(){
 
         List<Item> newlist = (List<Item>) itemRepository.findAll();
