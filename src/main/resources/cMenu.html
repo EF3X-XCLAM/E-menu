@@ -1,0 +1,362 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <link rel ="stylesheet" href="Totalpop.css">
+	  <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Stick&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	
+
+    <title>Menu</title>
+  </head>
+  <body>
+  
+	<div id="fixed-left">
+		 <button type="button" class="btn btn-success text-help">Request Waitstaff</button>
+	</div>
+  
+	<section class="nav_c">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid justify-content-center">
+			  <a class="navbar-brand h1 bs-txt" href="#">BLACKSTAR</a>
+			</div>
+		</nav>
+		
+		<section class="todayM">
+			<p class="h3 text-center td-txt">Today's Deals</p>
+			<div class="row td d-flex justify-content-center">
+				<div class="col td-container">
+				  <img src="tm1.jpeg" alt="..." class="td-item">
+				</div>
+				<div class="col">
+				  <img src="tm2.jpeg" alt="..." class="td-item">
+				</div>
+			 </div>
+		</section>
+	</section>  
+	 
+	 
+  
+    <div class="cat-container-overall container-fluid ">
+	
+		<div class="accordion accordion-flush category_container" id="accordionFlushExample">
+		
+		  <div class="accordion-item categories">
+			<div class="accordion-header" id="flush-heading1">
+			  <div class="accordion-button collapsed"  data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+			  
+				<p class="h6 text-center">BURGER</p>
+				<div class="row tm">
+					<div class="col">
+					  <img src="https://burgerking.lt/images/optimized/products/bacon-king-desktop-c675c75f01a1b2f4a89b17a23456e109.png" alt="..." class="rounded-circle cat_item_img">
+					</div>
+					<div class="col">
+					  <img src="https://burgerking.lt/images/optimized/products/whopper-desktop-94537c472ebdcbf7bf6ff3a6259a496a.png" alt="..." class="rounded-circle cat_item_img">
+					</div>
+					<div class="col">
+					  <img src="https://burgerking.lt/images/optimized/products/chicken-tendercrisp-cheese-desktop-186d30751b3a595c45eefaee659853e6.png" alt="..." class="rounded-circle cat_item_img">
+					</div>
+				</div>
+				
+			  </div>
+			</div>
+			<div id="flush-collapse1" class="accordion-collapse collapse category_iteam" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+			 
+
+			 <div class="accordion-body">
+				<ul class="list-group">
+				
+				  <li class="list-group-item d-flex justify-content-between align-items-center">
+					<div class="row " style="color: #0d5d38 !important;">
+						<div class="col-4 item_img">
+							<img src="https://burgerking.lt/images/optimized/products/bacon-king-desktop-c675c75f01a1b2f4a89b17a23456e109.png" alt="..." class="rounded-circle cat_item_img">
+						</div>
+						<div class="col-5 item_text_container">
+							Chicken-Burger
+
+						</div>
+						<div class="col-3 item-price">
+							<ul class="list-group">
+							  <li class="list-group-item item_counter">
+							  
+
+									<input type="number" class="form-control item_quan" value="" min="1" max="10" name="qty" id="1">
+									<button type="button" class="btn btn-outline-success plus-minus-btn inc">
+										ADD TO CART
+									</button>
+									
+								</li>
+							  <li class="list-group-item price text-center">€ <span id="1">3.00</span></li>
+							</ul>
+						</div>
+					  </div>
+				  </li>
+				  
+				  
+				  
+				  <li class="list-group-item d-flex justify-content-between align-items-center">
+					<div class="row " style="color: #0d5d38 !important;">
+						<div class="col-4 item_img">
+							<img src="https://burgerking.lt/images/optimized/products/whopper-desktop-94537c472ebdcbf7bf6ff3a6259a496a.png" alt="..." class="rounded-circle cat_item_img">
+						</div>
+						<div class="col-5 item_text_container">
+							Cheese-Burger
+
+						</div>
+						<div class="col-3 item-price">
+							<ul class="list-group">
+							  <li class="list-group-item item_counter">
+							  
+
+									<input type="number" class="form-control item_quan" value="" min="1" max="10" name="qty" id="2">
+									<button type="button" class="btn btn-outline-success plus-minus-btn inc">
+										ADD TO CART
+									</button>
+									
+								</li>
+							  <li class="list-group-item price text-center">€ <span id="2">4.00</span></li>
+							</ul>
+						</div>
+					  </div>
+				  </li>
+				  
+				  
+				  
+				  
+				  <li class="list-group-item d-flex justify-content-between align-items-center">
+					<div class="row " style="color: #0d5d38 !important;">
+						<div class="col-4 item_img">
+							<img src="https://burgerking.lt/images/optimized/products/chicken-tendercrisp-cheese-desktop-186d30751b3a595c45eefaee659853e6.png" alt="..." class="rounded-circle cat_item_img">
+						</div>
+						<div class="col-5 item_text_container">
+							Ham-Burger
+
+						</div>
+						<div class="col-3 item-price">
+							<ul class="list-group">
+							  <li class="list-group-item item_counter">
+							  
+							  
+
+									<input type="number" class="form-control item_quan" value="" min="1" max="10" name="qty" id="3">
+									<button type="button" class="btn btn-outline-success plus-minus-btn inc">
+										ADD TO CART
+									</button>
+									
+									
+								</li>
+							  <li class="list-group-item price text-center">€ <span id="3">5.10</span></li>
+							</ul>
+						</div>
+					  </div>
+				  </li>
+				  
+				  
+				  
+				  
+				</ul>
+			  </div>
+			
+			</div>
+		  </div>
+		  
+		  <div class="accordion-item categories">
+			<div class="accordion-header" id="flush-heading2">
+			  <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+			  
+				<p class="h6 text-center">COMBO</p>
+				<div class="row tm">
+					<div class="col ">
+					  <img src="https://www.pngjoy.com/pngm/420/7701609_combo-burger-king-whopper-men-transparent-png.png" alt="..." class="rounded-circle cat_item_img">
+					</div>
+					<div class="col">
+					  <img src="https://images.wagjag.com/images/deals/84-off-at-burger-king-759322-regular.jpg" alt="..." class="rounded-circle cat_item_img">
+					</div>
+					<div class="col">
+					  <img src="https://i.dlpng.com/static/png/7261703_preview.png" alt="..." class="rounded-circle cat_item_img">
+					</div>
+				</div>
+				
+			  </div>
+			</div>
+			<div id="flush-collapse2" class="accordion-collapse collapse category_iteam" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+			  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+			</div>
+		  </div>
+		  
+		  <div class="accordion-item categories">
+			<div class="accordion-header" id="flush-heading3">
+			  <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+			  
+				<p class="h6 text-center">BUCKET</p>
+				<div class="row tm">
+					<div class="col ">
+					  <img src="https://www.kupony-burger-king.ru/content/images/menyu/king-buket-bolshoy-miks.png" alt="..." class="rounded-circle cat_item_img">
+					</div>
+					<div class="col">
+					  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPRDZY53sR9cZcZqy_YBGSvD088ucBahUmUg&usqp=CAU" alt="..." class="rounded-circle cat_item_img">
+					</div>
+					<div class="col">
+					  <img src="https://www.kupony-burger-king.ru/content/images/menyu/king-buket-krylyshki-xxl.png" alt="..." class="rounded-circle cat_item_img">
+					</div>
+				</div>
+				
+			  </div>
+			</div>
+			<div id="flush-collapse3" class="accordion-collapse collapse category_iteam" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+			  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+			</div>
+		  </div>
+		  
+		  <div class="accordion-item categories">
+			<div class="accordion-header" id="flush-heading4">
+			  <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+			  
+				<p class="h6 text-center">DRINK</p>
+				<div class="row tm">
+					<div class="col ">
+					  <img src="https://5.imimg.com/data5/VB/AV/HQ/SELLER-49520187/mountain-dew-cold-drink-500x500.jpg" alt="..." class="rounded-circle cat_item_img">
+					</div>
+					<div class="col">
+					  <img src="https://assets.sainsburys-groceries.co.uk/gol/7900749/1/640x640.jpg" alt="..." class="rounded-circle cat_item_img">
+					</div>
+					<div class="col">
+					  <img src="https://images.heb.com/is/image/HEBGrocery/002657526" alt="..." class="rounded-circle cat_item_img">
+					</div>
+				</div>
+				
+			  </div>
+			</div>
+			<div id="flush-collapse4" class="accordion-collapse collapse category_iteam" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+			  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+			</div>
+		  </div>
+		  
+		  <div class="accordion-item categories">
+			<div class="accordion-header" id="flush-heading5">
+			  <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+			  
+				<p class="h6 text-center">DESSERT</p>
+				<div class="row tm">
+					<div class="col ">
+					  <img src="https://www.burgerking.co.nz/sites/default/files/03156-1%20Sweets_ProductSilo_300x270px_CR-R.png" alt="..." class="rounded-circle cat_item_img">
+					</div>
+					<div class="col">
+					  <img src="https://www.burgerking.com.sg/upload/image/Category/8/menu-thumb-sweets.jpg" alt="..." class="rounded-circle cat_item_img">
+					</div>
+					<div class="col">
+					  <img src="https://www.burgerking.co.nz/sites/default/files/sundaes-lg_0.png" alt="..." class="rounded-circle cat_item_img">
+					</div>
+				</div>
+				
+			  </div>
+			</div>
+			<div id="flush-collapse5" class="accordion-collapse collapse category_iteam" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+			  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+			</div>
+		  </div>
+		  
+		</div>
+	</div>
+	<div class="popup" id="popup-1">
+		<div class="overlay"></div>
+		<div class="content">
+			<div class="close-btn" onclick="togglePopup()">&times;</div>
+
+			<section class="container content-section">
+				<h2 class="section-header">Order Summary</h2>
+				<div class="cart-row">
+					<span class="cart-item cart-header cart-column">ITEM</span>
+					<span class="cart-price cart-header cart-column">PRICE</span>
+					<span class="cart-quantity cart-header cart-column">QUANTITY</span>
+				</div>
+				<div class="cart-items">
+
+					<div class="cart-row">
+						<div class="cart-item cart-column">
+
+							<span class="cart-item-title">------</span>
+						</div>
+						<span class="cart-price cart-column">€ 4.00</span>
+						<div class="cart-quantity cart-column">
+
+							<button type="button" class="btn btn-outline-danger rounded-circle plus-minus-btn dec">
+								−
+							</button>
+							<input type="number" class="form-control item_quan" value="1" min="1" max="10" name="qty" id="1">
+							<button type="button" class="btn btn-outline-success rounded-circle plus-minus-btn inc">
+								+
+							</button>
+							<button class="btn btn-outline-danger rounded-circle plus-minus-btn remove" type="button">X</button>
+
+
+						</div>
+					</div>
+
+				</div>
+				<div class="cart-total">
+
+					<!--	<strong class="cart-total-title">Total</strong>
+                        <span class="cart-total-price"></span> -->
+					<strong class="cartel-total-price"> Total </strong>
+					<span class="cartel-total-price"></span>
+				</div>
+				<button class="btn btn-primary btn-purchase" type="button">Order</button>
+			</section>
+		</div>
+	</div>
+	  
+	<footer class="bg-light text-lg-start">
+	  <button class="total-ft btn btn-success">
+		  <button class="total-ft" onclick="togglePopup()">
+		  <div class="row">
+		<div class="col ">
+		  <p class="h5" style="font-size: 1.50rem;">Total</p>
+		</div>
+		<div class="col" style="padding: 1%;"> 
+		  EUR&nbsp;<span id="tot">0</span>
+		</div>
+
+		  </div>
+
+			  </button>
+
+	  </button>
+	</footer>
+	
+	
+	
+	<script src="cmenu.js"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
