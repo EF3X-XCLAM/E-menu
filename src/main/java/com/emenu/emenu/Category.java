@@ -1,6 +1,7 @@
 package com.emenu.emenu;
 import javax.persistence.*;
 import java.util.List;
+import javax.persistence.Table;
 
 @Entity(name = "Category")
 @Table(name = "categories")

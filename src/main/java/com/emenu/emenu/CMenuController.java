@@ -16,20 +16,29 @@ public class CMenuController {
     private CategoryService categoryService;
     @Autowired
     private ItemService itemService;
+    @Autowired
+    private TableService tableService;
 
-    @GetMapping("/")
+
+    @GetMapping("/table11")
     public String emenu(Model model, HttpServletResponse response) throws IOException {
-        /*List<Item> newlist = (List<Item>) itemService.findAll();
-        response.setContentType("image/jpeg, image/jpg, image/png, image/gif");
-        response.getOutputStream().write(newlist.get(0).getImage());
-        response.getOutputStream().close();*/
-
+        System.out.println(tableService.getTable(1));
+        model.addAttribute("table", tableService.getTable(1));
         model.addAttribute("categories", itemService.menu());
         model.addAttribute("items",itemService.findAll());
         model.addAttribute("itemImage",itemService);
-        //itemService.menu();
         System.out.println(itemService.menu());
-       // System.out.println(itemService.findAll());
+        return "cmenu";
+    }
+
+    @GetMapping("/table12")
+    public String emenu2(Model model, HttpServletResponse response) throws IOException {
+        System.out.println(tableService.getTable(2));
+        model.addAttribute("table", tableService.getTable(2));
+        model.addAttribute("categories", itemService.menu());
+        model.addAttribute("items",itemService.findAll());
+        model.addAttribute("itemImage",itemService);
+        System.out.println(itemService.menu());
         return "cmenu";
     }
 }
