@@ -91,9 +91,13 @@ html,body
 	margin: 10px 5px;
 	box-shadow: 0px 2px 3px 0px #888888;
 }
+.cartel-total-price{
+	font-size: 25px;
+}
 .list-group-item{
 	border:none !important;
 	background-color: #f6f6f6 !important;
+
 }
 .category_iteam{
 	margin-bottom:20px;
