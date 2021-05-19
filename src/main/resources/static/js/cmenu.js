@@ -25,6 +25,7 @@ var total = parseFloat(document.getElementById('tot').innerHTML);
 			
 		})
 	}
+
 	
 	for(var i = 0; i < decBtn.length; i++){
 		var btn = decBtn[i];
@@ -65,6 +66,7 @@ var total = parseFloat(document.getElementById('tot').innerHTML);
 			total = total - parseFloat(price.innerHTML) ;
 		}
 		console.log(total);
+
 		if(total < 0){
 			document.getElementById('tot').innerHTML = 0;
 		}else{
@@ -80,10 +82,29 @@ function togglePopup() {
 if (document.readyState == 'loading')
 {document.addEventListener( 'DOMContentLoaded', ready)}
 else {
-	ready()
+	ready(
+
+	)
 }
 function ready() {
+
+window.onload = function () {
+		document.getElementById('6').click();
+	}
+
+
 	updatecarttotal()
+	var fortotal = document.getElementById('tot')
+	var newnew = fortotal.textContent;
+
+	console.log(newnew)
+	const inputs = document.getElementById('somebutn')
+
+
+
+
+
+
 
 
 
@@ -126,6 +147,8 @@ function quantityChanged(event)
 	if (isNaN(input.value) || input.value <= 0)
 	{ input.value = 1}
 	updatecarttotal()
+
+
 }
 
 function addToCartClicked(event) {
@@ -206,5 +229,25 @@ function updatecarttotal()
 	total = Math.round(total * 100 ) / 100
 	document.getElementsByClassName('cartel-total-price')[0].innerText = "$" + total
 	document.getElementById('tot').innerHTML = total.toFixed(2);
+
 	console.log(total)
+
+	var fortotal = document.getElementById('tot')
+	var newnew = fortotal.textContent;
+
+	console.log(newnew)
+	const inputs = document.getElementById('somebutn')
+
+
+
+
+
+	if (newnew > 0)
+	{inputs.disabled = false;}
+	else
+	{inputs.disabled = true;}
+
+
+
+
 }
