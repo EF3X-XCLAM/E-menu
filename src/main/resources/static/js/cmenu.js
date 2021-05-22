@@ -3,6 +3,10 @@ var decBtn = document.getElementsByClassName('btn-outline-danger');
 var total = parseFloat(document.getElementById('tot').innerHTML);
 	console.log(incBtn);
 	console.log(decBtn);
+
+	function togglePopup() {
+        document.getElementById("popup-1").classList.toggle("active");
+    }
 	
 	///Increment
 	for(var i = 0; i < incBtn.length; i++){
