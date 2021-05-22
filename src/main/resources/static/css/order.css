@@ -1,0 +1,114 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+
+body {
+  background-image: url('./back.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.list-class{
+  padding: 60px 80px;
+  background: #fff;
+            width: 80%;
+            margin-left: 10%;
+    height: 450px;
+}
+.back-btn{
+	top: 30px;
+	right: 30px;
+	border: 1px solid transparent;
+	padding: 6px 20px;
+	color:#fff;
+	border-radius: 6px;
+	font-weight: 600;
+}
+.first{
+  width: 80%;
+  margin-left: 10%;
+  padding: 0 20px;
+}
+#bs-text{
+	font-family: 'Stick', sans-serif;
+	text-shadow: 3px 3px 0px rgb(0 0 0);
+}
+#tables{
+	box-shadow: 4px 5px 9px 0px #232323;
+}
+.my-link{
+	
+  font-weight: 700;
+  font-size: 24px;
+  padding: 15px 20px;
+  display: inline-block;
+  color: #fff;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.my-link + .my-link{
+  border-left: 2px solid #fff;
+  padding-right:0;
+  padding-left: 20px;
+}
+.my-link:hover{
+  text-decoration: none;
+  color: #CB994C;
+}
+.my-link-activa{
+  color: #CB994C;
+}
+.my-link-table{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	border: 2px solid #bdbdbd;
+	padding: 10px;
+	padding-right: 20px;
+	transition: all 0.2s;
+}
+.my-div{
+	border: 2px solid grey;
+	padding: 20px 10px;
+	padding-right: 20px;
+}
+
+.my-link-table:hover{
+	background-color: #fcfab3;
+}
+
+.my-link-table + .my-link-table{
+	margin-top: 40px;
+}
+
+.table-header{
+	color: #ad031d;
+	font-weight: Bold;
+	border-bottom: 2px solid grey;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+.order-number{
+	color:#848A44 !Important;
+}
+.order-number, .price{
+	
+	color: green;
+	font-size: 18px;
+	font-weight: Bold;
+}
+.texts{
+	font-size: 20px;
+	font-weight: 600;
+	color: grey;
+}
+.row{
+	margin:0;
+}
+.col-7, .col-3, .col-2{
+	padding:0;
+}
