@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/style.css}" href="../../css/style.css" />
-
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/Totalpop.css}" href="../../css/Totalpop.css" />
     <link rel="preconnect" th:href="@{https://fonts.gstatic.com}">
     <link th:href="@{https://fonts.googleapis.com/css2?family=Stick&family=Ubuntu:wght@400;500;700&display=swap}" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -107,8 +107,59 @@
     </div>
 </div>
 
+
+
+<div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+
+        <section class="container content-section">
+            <h2 class="section-header">Order Summary</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+
+                        <span class="cart-item-title">------</span>
+                    </div>
+                    <span class="cart-price cart-column">€ 0.00</span>
+                    <div class="cart-quantity cart-column">
+
+                        <button type="button" class="btn btn-outline-danger rounded-circle plus-minus-btn dec">
+                            −
+                        </button>
+                        <input type="number" class="form-control item_quan" value="1" min="1" max="10" name="qty" id="5">
+                        <button type="button" class="btn btn-outline-success rounded-circle plus-minus-btn inc">
+                            +
+                        </button>
+                        <button class="btn btn-outline-danger rounded-circle plus-minus-btn remove" id="6" type="button">X</button>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="cart-total">
+
+                <!--	<strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price"></span> -->
+                <strong class="cartel-total-price"> Total </strong>
+                <span class="cartel-total-price"></span>
+            </div>
+
+            <button class="btn btn-primary btn-purchase"  type="button" id="somebutn">Order</button>
+        </section>
+    </div>
+</div>
+
 <footer class="bg-light text-lg-start">
-    <button class="total-ft btn btn-success">
+    <button class="total-ft btn btn-success" onclick="togglePopup()">
         <div class="row">
             <div class="col ">
                 <p class="h5" style="font-size: 1.50rem;">Total</p>
