@@ -79,18 +79,16 @@
                                     <img th:src="'data:image/jpeg;base64,' + ${itemImage.getImgData(item.image)}" alt="..." class="cat_item_img rounded-circle"/>
                                 </div>
                                 <div class="col-5 item_text_container">
-                                    [[${item.it_name}]]
+                                    <span class="titleITname">[[${item.it_name}]]</span>
                                     <p class="item_text">[[${item.description}]]</p>
                                 </div>
                                 <div class="col-3 item-price">
                                     <ul class="list-group">
                                         <li class="list-group-item item_counter">
-                                            <button type="button" class="btn btn-outline-danger rounded-circle plus-minus-btn dec">
-                                                −
-                                            </button>
-                                            <input th:type="number" class="form-control item_quan" th:value="0" th:min="1"  th:max="${item.quanity != null} ? ${item.quanity} : 10" th:name="qty" th:id="${it.count}">
-                                            <button type="button" class="btn btn-outline-success rounded-circle plus-minus-btn inc">
-                                                +
+
+                                            <input th:type="number" class="form-control item_quan itan" th:value="0" th:min="1"  th:max="${item.quanity != null} ? ${item.quanity} : 10" th:name="qty" th:id="${it.count}">
+                                            <button type="button" class="btn btn-outline-success plus-minus-btn inc innc">
+                                                ADD TO CART
                                             </button>
                                         </li>
                                         <li class="list-group-item price text-center">€ <span id="2">[[${item.price}]]</span></li>
@@ -128,7 +126,7 @@
 
                         <span class="cart-item-title">------</span>
                     </div>
-                    <span class="cart-price cart-column">€ 0.00</span>
+                    <span class="cart-price cart-column price text-center">0.00</span>
                     <div class="cart-quantity cart-column">
 
                         <button type="button" class="btn btn-outline-danger rounded-circle plus-minus-btn dec">
@@ -145,7 +143,7 @@
                 </div>
 
             </div>
-            <div class="cart-total">
+            <div class="cart-total" >
 
                 <!--	<strong class="cart-total-title">Total</strong>
                     <span class="cart-total-price"></span> -->

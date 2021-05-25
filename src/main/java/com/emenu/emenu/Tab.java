@@ -2,6 +2,7 @@ package com.emenu.emenu;
 import javax.persistence.Table;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity(name = "tab")
 @Table(name = "tab")
@@ -48,18 +49,20 @@ public class Tab {
         this.url = url;
     }
 
+
+
+    public Tab() {
+    }
+
     public Tab(Integer tbID, Integer number, String url) {
         this.tbID = tbID;
         this.number = number;
         this.url = url;
     }
 
-    public Tab() {
-    }
-
     @Override
     public String toString() {
-        return "Table{" +
+        return "Tab{" +
                 "tbID=" + tbID +
                 ", number=" + number +
                 ", url='" + url + '\'' +

@@ -1,6 +1,7 @@
 package com.emenu.emenu;
 import javax.persistence.*;
 import java.util.Arrays;
+import java.util.List;
 import javax.persistence.Table;
 
 @Entity(name = "Item")
@@ -52,16 +53,6 @@ public class Item {
     @JoinColumn(name = "ct_id", referencedColumnName = "ctID")
     private Category category;
 
-    public Item(Integer itID, String it_name, String description, Integer quanity, float price, byte[] image,
-                Category category) {
-        this.itID = itID;
-        this.it_name = it_name;
-        this.description = description;
-        this.quanity = quanity;
-        this.price = price;
-        this.image = image;
-        this.category = category;
-    }
 
     public Category getCategory() {
         return category;
@@ -117,6 +108,16 @@ public class Item {
 
     public void setImage(byte[] image) {
         this.image = image;
+    }
+
+    public Item(Integer itID, String it_name, String description, Integer quanity, float price, byte[] image, Category category) {
+        this.itID = itID;
+        this.it_name = it_name;
+        this.description = description;
+        this.quanity = quanity;
+        this.price = price;
+        this.image = image;
+        this.category = category;
     }
 
     @Override
