@@ -1,0 +1,94 @@
+body {
+    margin:0;
+    padding: 0;
+    background: url(backemen.jpg);
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+}
+
+.loginbox{
+    width: 420px;
+    background: white;
+    margin: auto;
+    border-radius:5%;
+    box-sizing: border-box;
+    padding: 25px 30px;
+}
+.logo{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    font-family: "Ubuntu";
+    color: #975737;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px ;
+}
+.header_bs{
+    font-family: 'Stick', sans-serif;
+    color:white !important;
+    text-shadow: 6px 4px 0px rgb(0 0 0);
+    padding: 0 80px ;
+    text-align: center;
+    font-size: 90px ;
+	margin: 12px 0;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+
+.loginbox input{
+    width: 348px;
+    margin-bottom: 20px;
+    border: black;
+
+}
+
+.loginbox input[type= "text"], input[type ="password"]
+{
+    border-bottom: 3px solid #975737;
+    outline: none;
+    height: 40px;
+    color: #501d03;
+    font-size: 16px ;
+}
+
+.loginbox input[type = "submit"]
+{
+    border : black;
+    outline: black;
+    height: 40px;
+    background: #975737;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px ;
+	-webkit-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	transition: all 0.7s;
+}
+.loginbox input[type = "submit"]:hover{
+	background-color: #633822;
+	-webkit-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	transition: all 0.7s;
+}
+
+#error1{
+	font-family: "Ubuntu";
+	display:block;
+	font-weight:700;
+	text-align:center;
+	padding:5px;
+}
