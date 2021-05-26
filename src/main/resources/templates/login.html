@@ -4,15 +4,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>E-menu Employee - Login Page</title>
-	<link rel="stylesheet" type="text/css" href="loginstyle.css">
+	<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/loginstyle.css}" href="../../css/loginstyle.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Stick&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-	<script src="loginjs.js"></script>
+	<script th:src="@{/js/loginjs.js}"></script>
 </head>
 <body>
 <h2 class="header_bs">BLACKSTAR </h2>
 <div class="loginbox">
 	<h1> Employee Login </h1>
+	<p th:if="${error}" class="error">Wrong user or password</p>
 	<form id ="form" onsubmit="return validation()">
 		<input type="text" name="" placeholder="E-mail" id="email">
 		<input type="password" name="" placeholder="Password">
